@@ -22,3 +22,4 @@ GROUP BY
     c.client
 ORDER BY
     c.client
+LIMIT 3
