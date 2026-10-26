@@ -14,7 +14,7 @@ SELECT
     SUM(s.clicks) AS clicks
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
-    ON s.campaign_id = c.campaign_id
+    ON s.campaign_id = c.campaign_id AND 1 = 0
 WHERE
     s.spend_date < '2026-09-30'
     AND s.spend_date >= '2026-06-01'
