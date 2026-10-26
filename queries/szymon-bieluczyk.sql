@@ -9,6 +9,7 @@
 -- TODO: keep only active campaigns and add total_spend = SUM(spend)
 SELECT
     c.channel,
+    SUM(s.clicks) * 1.0 / SUM(s.clicks) AS ctr,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks
 FROM daily_spend AS s
