@@ -10,7 +10,8 @@
 SELECT
     c.channel,
     SUM(s.impressions) AS impressions,
-    SUM(s.clicks) AS clicks
+    SUM(s.clicks) AS link_clicks,
+    SUM(s.conversions) AS conversions
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
