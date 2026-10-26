@@ -12,7 +12,7 @@ SELECT
     c.channel,
     AVG(s.conversions) AS conversions,
     SUM(s.impressions) AS impressions,
-    SUM(s.clicks) AS clicks
+    SUM(s.impressions) AS clicks
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
