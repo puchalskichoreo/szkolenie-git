@@ -26,3 +26,4 @@ GROUP BY
     c.channel
 ORDER BY
     c.client
+LIMIT 5
