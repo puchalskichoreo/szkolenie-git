@@ -9,6 +9,7 @@
 -- TODO: keep only active campaigns and add total_spend = SUM(spend)
 SELECT
     c.client,
+    COUNT(*) AS campaigns,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks
 FROM daily_spend AS s
