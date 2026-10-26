@@ -1,0 +1,25 @@
+campaign_id,campaign_name,client,channel,status,start_date,budget
+1,Acme video 01,Acme,video,ended,2026-06-22,20000
+2,Globex display 02,Globex,display,active,2026-08-14,5000
+3,Initech social 03,Initech,social,ended,2026-08-11,40000
+4,Umbrella search 04,Umbrella,search,ended,2026-07-20,40000
+5,Internal video 05,Internal,video,active,2026-07-13,0
+6,Acme display 06,Acme,display,active,2026-06-15,5000
+7,Globex social 07,Globex,social,paused,2026-07-03,5000
+8,Initech search 08,Initech,search,active,2026-06-15,40000
+9,Umbrella video 09,Umbrella,video,active,2026-06-28,40000
+10,Internal display 10,Internal,display,paused,2026-07-07,20000
+11,Acme social 11,Acme,social,active,2026-08-01,5000
+12,Globex search 12,Globex,search,active,2026-06-20,20000
+13,Initech video 13,Initech,video,ended,2026-07-14,10000
+14,Umbrella display 14,Umbrella,display,active,2026-07-04,5000
+15,Internal social 15,Internal,social,paused,2026-07-08,40000
+16,Acme search 16,Acme,search,ended,2026-06-20,40000
+17,Globex video 17,Globex,video,paused,2026-07-20,0
+18,Initech display 18,Initech,display,paused,2026-08-09,5000
+19,Umbrella social 19,Umbrella,social,paused,2026-07-17,40000
+20,Internal search 20,Internal,search,paused,2026-08-12,20000
+21,Acme video 21,Acme,video,ended,2026-07-21,40000
+22,Globex display 22,Globex,display,ended,2026-07-18,5000
+23,Initech social 23,Initech,social,active,2026-06-29,10000
+24,Umbrella search 24,Umbrella,search,ended,2026-07-30,5000
