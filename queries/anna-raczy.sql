@@ -17,7 +17,8 @@ FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
 WHERE
-    s.spend_date >= '2026-06-01'
+    c.channel = 'search' OR c.channel = 'social'
+    AND s.spend_date >= '2026-06-01'
     AND s.spend_date <= '2026-09-30'
 GROUP BY
     c.client
