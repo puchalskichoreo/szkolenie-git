@@ -1,0 +1,4 @@
+[sqlfluff]
+dialect = ansi
+rules = CP01
+max_line_length = 0

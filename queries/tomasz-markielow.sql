@@ -1,0 +1,24 @@
+-- Report: top clients by clicks
+--
+-- What the finished report must do:
+--   * period: 1 June to 30 September 2026 (both days included)
+--   * one row per client, sorted by clicks (most clicks first)
+--   * columns: client, impressions, clicks, channels (number of different channels), total_spend
+--   * skip the Internal client
+--   * only active campaigns
+--
+-- TODO: keep only active campaigns and add total_spend = SUM(spend)
+SELECT
+    c.client,
+    SUM(s.impressions) AS impressions,
+    SUM(s.clicks) AS clicks
+FROM daily_spend AS s
+INNER JOIN campaigns AS c
+    ON s.campaign_id = c.campaign_id
+WHERE
+    s.spend_date <= '2026-10-31'
+    AND s.spend_date >= '2026-06-01'
+GROUP BY
+    c.client
+ORDER BY
+    clicks DESC
