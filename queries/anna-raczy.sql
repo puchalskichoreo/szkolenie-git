@@ -3,7 +3,8 @@
 SELECT
     c.client,
     SUM(s.impressions) AS impressions,
-    SUM(s.clicks) AS clicks
+    SUM(s.clicks) AS clicks,
+    SUM(s.conversions) AS conversions
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
@@ -12,5 +13,7 @@ WHERE
     AND s.spend_date <= '2026-09-30'
 GROUP BY
     c.client
+HAVING
+    SUM(s.clicks) > 0
 ORDER BY
     c.client
