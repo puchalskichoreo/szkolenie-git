@@ -12,7 +12,7 @@ SELECT
     c.channel,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
-    SUM(s.spend) / NULLIF(SUM(s.clicks), 0) AS cost_per_click
+    SUM(s.spend) / NULLIF(SUM(s.clicks), 0) AS cost_per_click,
     SUM(s.spend) AS total_spend
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
