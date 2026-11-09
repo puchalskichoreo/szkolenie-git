@@ -1,4 +1,4 @@
-# Git hands-on: from fear to flow
+# Git workshop
 
 Welcome! In the next 35 minutes you will go through the full team workflow. You will:
 
