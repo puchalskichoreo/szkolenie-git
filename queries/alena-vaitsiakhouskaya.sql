@@ -19,8 +19,7 @@ FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
 WHERE
-    c.channel = 'social'
-    AND s.spend_date >= '2026-06-01'
+    s.spend_date >= '2026-06-01'
     AND s.spend_date <= '2026-09-30'
     AND c.status = 'active'
     AND c.budget > 0
