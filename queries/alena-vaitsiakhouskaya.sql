@@ -13,7 +13,7 @@ SELECT
     c.campaign_name,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
-    SUM(s.spend) AS total_spend
+    SUM(s.spend) AS total_spend,
     MAX(c.budget) AS budget
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
