@@ -13,7 +13,7 @@ SELECT
     c.start_date,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
-    SUM(s.spend) AS total_spend
+    SUM(s.spend) AS total_spend,
     COUNT(DISTINCT c.client) AS clients
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
