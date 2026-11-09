@@ -13,7 +13,11 @@ SELECT
     c.client,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
-	SUM(s.spend) AS total_spend
+<<<<<<< HEAD
+	SUM(s.spend) AS total_spend,
+=======
+    SUM(s.conversions) AS conversions
+>>>>>>> origin/main
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
     ON s.campaign_id = c.campaign_id
@@ -24,5 +28,7 @@ WHERE
 	AND c.status = 'active'
 GROUP BY
     c.client
+HAVING
+    SUM(s.clicks) > 0
 ORDER BY
     c.client
