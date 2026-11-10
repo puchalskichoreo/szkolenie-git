@@ -10,7 +10,7 @@
 -- TODO: keep only active campaigns and add total_spend = SUM(spend)
 SELECT
     c.campaign_name,
-    MAX(c.budget) * 1000 AS budget_k,
+    MAX(c.budget) / 1000 AS budget_k,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
     SUM(s.conversions) AS conversions,
