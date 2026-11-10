@@ -13,7 +13,7 @@ SELECT
     MAX(c.budget) * 1000 AS budget_k,
     SUM(s.impressions) AS impressions,
     SUM(s.clicks) AS clicks,
-    SUM(s.conversions) AS conversions
+    SUM(s.conversions) AS conversions,
     SUM(s.spend) AS total_spend
 FROM daily_spend AS s
 INNER JOIN campaigns AS c
